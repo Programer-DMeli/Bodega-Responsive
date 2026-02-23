@@ -5,113 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOPY-SHOP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
 </head>
 <body>
+    <!--Navegation-content with Bootstrap 5-->
     <header class="header-main">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary"> 
             <div class="container-fluid">
                  <a class="navbar-brand d-flex align-items-center" href="index.html">
                  <img src="../img/clogo_bodega.jpg" alt="TOPY-SHOP" width="56" height="56" class="me-2 rounded-circle img-fluid" style="object-fit:cover;"> 
                  <span class="fs-5 fw-bold">TOPY-SHOP</span> 
                 </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ms-auto mb-2 me-5 mb-lg-0 fw-bold">
+                            <li class="nav-item cursor-pointer">
+                                <a class="nav-link nav-link-hover link-info" href="#">Home</a>
+                            </li>
+                             <li class="nav-item cursor-pointer">
+                                <a class="nav-link nav-link-hover link-info" href="#">Products</a>
+                            </li>
+                            <li class="nav-item cursor-pointer">
+                                <a class="nav-link nav-link-hover link-info" href="#">Services</a>
+                            </li>
+                            <li class="nav-item cursor-pointer">
+                                <a class="nav-link nav-link-hover link-info" href="#">Promotions</a>
+                            </li>
+                            <li class="nav-item cursor-pointer">
+                                <a class="nav-link nav-link-hover link-info" href="#">Account</a>
+                            </li>
+                        </ul>
+                         <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                </div>
             </div> 
         </nav>
     </header>
-    <div class="container-alert">
+    <main>
+    <!--Alert-Desing -->
+    <div class="container-alert align-items-center d-flex justify-content-center mt-4">
         <div class="alert alert-info" role="alert">
-            ¡Bienvenido a TOPY-SHOP! Descubre nuestras increíbles ofertas y productos de calidad.
+            ¡Bienvenido a <strong>TOPY-SHOP</strong>! Descubre nuestras increíbles ofertas y productos de calidad.
         </div>
     </div>
-    <div class="container">
+    <!--Carousel-content -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+         <div class="carousel-inner">
+          <div class="carousel-item active " data-bs-interval="10000" style="max-height: 700px;">
+           <img src="../img/desinfectantes.jpg" class="d-block w-100" alt="first-carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+            <div class="carousel-item" data-bs-interval="2000" style="max-height: 700px;">
+            <img src="../img/First.jpeg" class="d-block w-100" alt="second-carousel">
+            <div class="carousel-caption d-none d-md-block align-items-center justify-content-center">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+            </div>
+            <div class="carousel-item" style="max-height: 700px;">
+                <img src="../img/1654793967.jpg" class="d-block w-100" alt="third-carousel">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Content-article-->
+    <div class="container-fluid text-bg-light p-3 text-center mb-4 mt-4 rounded-3">
+        <h1 class="display-4 fw-bold">¡Las mejores promociones en TOPY-SHOP!</h1>
+                <p class="lead">Tu tienda en línea de confianza para productos de limpieza, higiene personal, alimentos y bebidas.</p>
+    </div>
+
+    <!--Tarjetas-->
+    <div class="container ">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 bg-primary">
-                <h2>Productos de limpieza</h2>
-                <p>Encuentra una amplia variedad de productos para mantener tu hogar limpio y ordenado.</p>
+            <div class="col-md-4">
+                <div class="card margin-0">
+                    <img src="../img/carousel.jpg" class="card-img-top" alt="Productos de limpieza">
+                    <div class="card-body">
+                       <h5 class="card-title">Productos de limpieza</h5>
+                       <p class="card-text">Encuentra una amplia variedad de productos para mantener tu hogar limpio y ordenado.</p>
+                      <a href="#" class="btn btn-primary">Compra con descuento</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 bg-success">
-                <h2>Higiene personal</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nihil voluptatem illo accusamus ex nemo hic ad error rerum consectetur quos sunt similique, voluptas explicabo sint tempora, et quod ullam?</p>
+               <div class="col-md-4">
+                <div class="card margin-0" >
+                    <img src="../img/second-img.jpg" class="card-img-top" alt="bebida">
+                    <div class="card-body">
+                       <h5 class="card-title">Bebidas</h5>
+                       <p class="card-text">Explora nuestra selección de bebidas para disfrutar en cualquier momento.</p>
+                      <a href="#" class="btn btn-primary">Compra con descuento</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 bg-danger">
-                <h2>Bebidas</h2>
-                <p>Explora nuestra selección de bebidas para disfrutar en cualquier momento.</p>
-
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 bg-warning">
-                <h2>Alimentos</h2>
-                <p>Explora nuestra selección de alimentos para satisfacer tus necesidades diarias.</p>
+            <div class="col-md-4">
+                <div class="card margin-0">
+                    <img src="../img/third-img.jpg" class="card-img-top" alt="Canasta básica">
+                    <div class="card-body">
+                       <h5 class="card-title">Canasta básica</h5>
+                       <p class="card-text">Encuentra una amplia variedad de productos para tu canasta básica de alimentos este siempre llena</p>
+                      <a href="#" class="btn btn-primary">Compra con descuento</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <section>
-        <h2>Bienvenido a TOPY-SHOP</h2>
-        <p>Tu tienda en línea de confianza para productos de limpieza, higiene personal, alimentos y bebidas.</p>
-        <div class="container">
-            <div class="box">
-                <h3>Productos de limpieza</h3>
-                <p>Encuentra una amplia variedad de productos para mantener tu hogar limpio y ordenado.</p>
+    <!--Tarjetas-horizontales-->    
+        <div class="container mt-5">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="../img/first-img.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">Compra como millonario</h3>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Gracias por elegirnos estas haciendo una eleccion de compra inteligente</small></p>
+                    </div>
+                    </div>
+                    <div class="text-center mb-5">
+                        <a href="#" class="btn btn-primary">Catalogo</a>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <h3>Higiene personal</h3>
-                <p>Descubre productos de higiene personal para cuidar de ti y tu familia.</p>
-            </div>
-            <div class="box">
-                <h3>Alimentos</h3>
-                <p>Explora nuestra selección de alimentos  para satisfacer tus necesidades diarias.</p>
-            </div>
-            <div class="box">
-                <h3>Bebidas</h3>
-                <p>Explora nuestra selección de bebidas para disfrutar en cualquier momento.</p>
-            </div>
-        </div>
-        <article>
-            <h2>Ofertas y promociones</h2>
-            <p>Descubre nuestras ofertas y promociones exclusivas para ahorrar en tus compras.</p>
-
-        </article>
-    </section>
-    <aside>
-        <h2>Suscríbete a nuestro boletín</h2>
-        <p>Recibe las últimas ofertas y novedades directamente en tu correo electrónico.</p>
-        <form action="##">
-            <input type="email" placeholder="Ingresa tu correo electrónico">
-            <button type="submit">Suscribirse</button>
-        </form>
-    </aside>
-    <details>
-    <summary>Más información sobre TOPY-SHOP</summary>
-    <p>TOPY-SHOP es una tienda en línea dedicada a ofrecer una amplia gama
-    de productos de limpieza, higiene personal, alimentos y bebidas. 
-    Nuestro objetivo es proporcionar a nuestros clientes productos de 
-    alta calidad a precios competitivos, junto con un excelente servicio al cliente.
-    Nos esforzamos por mantenernos actualizados con las últimas tendencias y necesidades
-    del mercado para garantizar que nuestros clientes encuentren todo lo que necesitan en un solo lugar.</p>
-    </details>
-    <footer>
-        <div class="parte-1">
-            <div class="footer-conten">
-                <i><img src="#" alt="logo"></i>
-
-            </div>
-            <div class="footer-conten">
-                <h3>Contáctanos</h3>
-                <p>Correo electrónico: contacto@topyshop.com</p>
-                <p>Teléfono: +1 234 567 890</p>
-            </div>
-            <div class="footer-conten">
-                <h3>SIGUENOS</h3>
-                <li>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">TikTok</a>
-                </li>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-7">
+                    <div class="card-body">
+                        <h3 class="card-title">La solucion que necesitas</h3>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Gracias por elegirnos, nuestros productos son de la mas alta calidad</small></p>
+                    </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="../img/desinfectantes.jpg" class="img-fluid rounded-start" alt="imagen de desinfectantes">
+                    </div>
+                    <div class="text-center mb-5">
+                        <a href="#" class="btn btn-primary">Catalogo</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="parte-2">
-            <small>&copy; 2024 TOPY-SHOP. Todos los derechos reservados.</small>
-        </div>
-    </footer>
+        <!--Footer-Content-->
+        <footer>
+            <div class="container-fluid mt-5 bg-dark text-light p-4"> <!--Bootstrap doesn't have a defauld footer, but you have all the tools to customize it to your liking-->
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Contáctanos</h5>
+                        <p>Correo electrónico: contacto@topyshop.com</p>
+                        <p>Teléfono: +1 234 567 890</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Síguenos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none">Facebook</a></li>
+                            <li><a href="#" class="text-decoration-none">Twitter</a></li>
+                            <li><a href="#" class="text-decoration-none">Instagram</a></li>
+                            <li><a href="#" class="text-decoration-none">TikTok</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 align-items-center justify-content-center mb-3">
+                        <img src="../img/clogo_bodega.jpg" alt="logo de la empresa" width="150" height="150" class="rounded-circle img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                            <h5 class="text-white mb-3">Acerca de TOPY-SHOP</h5>
+                        <p>En TOPY-SHOP, nos dedicamos a ofrecer productos de alta calidad a precios competitivos. Nuestra misión es brindar una experiencia de compra excepcional a nuestros clientes.</p>
+                    </div>
+                    <div class="text-center mt-5">
+                        <small>&copy; 2024 TOPY-SHOP. Todos los derechos reservados.</small>
+                    </div>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
